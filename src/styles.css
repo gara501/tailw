@@ -1,0 +1,46 @@
+/* includes resets */
+@tailwind preflight;
+
+/*BEM extensions*/
+.button {
+  @apply block py-2 px-4 rounded-sm mb-2 text-white bg-red;
+}
+
+.button--pink {
+  @apply bg-pink;
+}
+
+.button--blue {
+  @apply bg-blue;
+}
+
+.hero {
+  height: 630px;
+}
+
+.hero img {
+  object-fit: cover;
+  height: 630px;
+  width: 100%;
+}
+
+.hero .inner {
+  background: rgba(53,122,254,.95);
+  max-width: 572px;
+  top: 150px;
+}
+
+/* includes utilities classes */
+@tailwind utilities;
+
+@variants hover {
+  .bg-gradient-blue {
+    background-color: #21d4fd;
+    background-image: linear-gradient(19deg, #b721ff 0%, #21d4fd 100%);
+  }
+
+  .bg-gradient-orange {
+    background-color: #ff353b;
+    background-image: linear-gradient(147deg, #ff2525 0%, #ffe53b 100%);
+  }
+}
